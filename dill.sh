@@ -85,6 +85,10 @@ exit_validator() {
 
 # 函数：显示主菜单
 show_menu() {
+    clear  # 每次显示菜单前清除屏幕
+    # 每次显示菜单时下载并显示 logo
+    curl -s https://raw.githubusercontent.com/ziqing888/logo.sh/refs/heads/main/logo.sh | bash
+    sleep 3
     echo "============================================================"
     echo "                    Dill 节点管理主菜单"
     echo "============================================================"
